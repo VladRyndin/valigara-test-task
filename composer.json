@@ -12,7 +12,10 @@
     "psr-4": {
       "App\\": "app/",
       "Core\\": "core/"
-    }
+    },
+    "files": [
+      "helpers/autoload_helpers.php"
+    ]
   },
   "require": {
     "guzzlehttp/guzzle": "^7.7"
