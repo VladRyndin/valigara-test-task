@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 
 class ApiRequests extends Client {
 
-    protected array $query, $headers, $bodyData;
+    private array $query, $headers, $bodyData;
 
     protected $answer;
 
@@ -45,7 +45,7 @@ class ApiRequests extends Client {
     }
 
     public function setHeaders (array $headers) {
-        $this->headers = $headers;
+        $this->headers = (empty($this->headers)) ? $headers : array_merge($this->headers, $headers);
         return $this;
     }
 

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Actions;
+namespace App\Actions\Orders;
 
 
 class OrderAction extends \App\Data\AbstractOrder {
@@ -21,9 +21,5 @@ class OrderAction extends \App\Data\AbstractOrder {
         }
 
         return [];
-    }
-
-    public function getData () {
-        return $this->data;
     }
 }
