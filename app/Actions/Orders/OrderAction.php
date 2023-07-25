@@ -16,10 +16,7 @@ class OrderAction extends \App\Data\AbstractOrder {
 
     protected function loadOrderData(int $id): array {
         $order = configs_json($this->orderFile);
-        if (isset($order["id"]) && $order["id"] == $id) {
-            return $order;
-        }
 
-        return [];
+        return (isset($order["id"]) && $order["id"] == $id) ? $order : [];
     }
 }

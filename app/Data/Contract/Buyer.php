@@ -4,9 +4,7 @@
 namespace App\Data\Contract;
 
 
-use App\Data\BuyerInterface;
-
-class Buyer implements BuyerInterface {
+class Buyer implements \App\Data\BuyerInterface {
     public function offsetExists($offset)
     {
         return isset($this->$offset);

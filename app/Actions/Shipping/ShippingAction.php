@@ -4,10 +4,9 @@ namespace App\Actions\Shipping;
 
 use App\Data\AbstractOrder;
 use App\Data\BuyerInterface;
-use App\Services\ShippingServiceInterface;
 use App\FBA\{CreateFulfillmentOrder, GetFulfillmentOrder, GetPackageTrackingDetails};
 
-class ShippingAction implements ShippingServiceInterface {
+class ShippingAction implements \App\Services\ShippingServiceInterface {
 
     private GetFulfillmentOrder $getFulfillmentOrder;
     private CreateFulfillmentOrder $createFulfillmentOrder;
