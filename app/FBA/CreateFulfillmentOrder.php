@@ -28,7 +28,7 @@ class CreateFulfillmentOrder extends \Core\Libs\FBA {
             "destinationAddress" => $this->getAddress($data),
             "items" => $this->getItemsArr($data["products"]),
         ];
-        // TODO: Implement setData() method.
+
         return $this;
     }
 
