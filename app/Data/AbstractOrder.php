@@ -5,11 +5,13 @@ namespace App\Data;
 abstract class AbstractOrder
 {
 
+    //aaa
     private int $id;
 
     //
     public ?array $data;
 
+    //sss
     abstract protected function loadOrderData(int $id): array;
 
     public function __construct(int $id)
@@ -21,6 +23,7 @@ abstract class AbstractOrder
     {
         return $this->id;
     }
+    //2222
 
     final public function load(): void
     {
