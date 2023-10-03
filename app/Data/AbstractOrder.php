@@ -6,6 +6,8 @@ abstract class AbstractOrder
 {
 
     private int $id;
+
+    //
     public ?array $data;
 
     abstract protected function loadOrderData(int $id): array;
